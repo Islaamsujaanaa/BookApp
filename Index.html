@@ -1,0 +1,624 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading App</title>
+    <!-- Add link to your CSS file here -->
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Share The Magic Of Reading</h1>
+        </header>
+        <main class="app-content">
+            <div class="reading-graphic">
+                <!-- Insert your reading graphic here -->
+            </div>
+            <button class="start-button">Get Started</button>
+        </main>
+    </div>
+    <!-- Add link to your JavaScript file here -->
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <img src="path-to-your-icon.png" alt="Security Icons">
+        </div>
+        <form class="signup-form">
+            <h2>Sign Up</h2>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="button" onclick="createAccount()">Create Account</button>
+            <p>Already have an account? <a href="#">sign in</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .sign-in-form {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 20px;
+            border: none;
+        }
+        button {
+            width: 80%;
+            background-color: #ff66b2;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        a {
+            color: #ff66b2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Illustration -->
+        <div class="illustration">
+            <img src="hand-phone-illustration.png" alt="Hand holding smartphone illustration">
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="sign-in-form">
+            <h2>Sign In</h2>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="**********">
+            <button type="submit">Sign In</button>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .filters button {
+            border: none;
+            background-color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .filters button.active {
+            background-color: #ddd;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book-item {
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+        }
+        .book-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .book-item p {
+            margin: 10px 0 0;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hello Rana! Which book do you want to buy?</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for books...">
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="new">New</button>
+            <button class="filter-btn" data-filter="bestseller">BestSeller</button>
+            <button class="filter-btn" data-filter="audiobook">Audiobook</button>
+        </div>
+        <div class="book-list">
+            <div class="book-item" data-category="all">
+                <img src="book1.jpg" alt="A Million to One">
+                <p>A Million to One<br><small>by Tony Faggioli</small></p>
+            </div>
+            <div class="book-item" data-category="all">
+                <img src="book2.jpg" alt="The Boy with the Tiger's Heart">
+                <p>The Boy with the Tiger's Heart<br><small>by Linda Coggin</small></p>
+            </div>
+            <div class="book-item" data-category="all">
+                <img src="book3.jpg" alt="The Imperfections of Memory">
+                <p>The Imperfections of Memory<br><small>by Angelina Alluda</small></p>
+            </div>
+            <div class="book-item" data-category="all">
+                <img src="book4.jpg" alt="The Light Beyond the Garden Wall">
+                <p>The Light Beyond the Garden Wall<br><small>by Scott Whitehead</small></p>
+            </div>
+            <div class="book-item" data-category="all">
+                <img src="book5.jpg" alt="Harry Potter">
+                <p>Harry Potter<br><small>by J.K. Rowling</small></p>
+            </div>
+            <div class="book-item" data-category="all">
+                <img src="book6.jpg" alt="The Ballad of Black Tom">
+                <p>The Ballad of Black Tom<br><small>by Victor LaValle</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button><img src="home_icon.png" alt="Home" width="24"></button>
+        <button><img src="library_icon.png" alt="Library" width="24"></button>
+        <button><img src="settings_icon.png" alt="Settings" width="24"></button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filter = button.getAttribute('data-filter');
+                document.querySelectorAll('.book-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>Favourite books</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for books.....">
+                <button>🔍</button>
+            </div>
+        </div>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="fairy_tale.jpg" alt="Fairy Tale">
+                <div class="book-info">
+                    <h2>Fairy Tale</h2>
+                    <p>by Stephen King</p>
+                    <div class="rating">⭐⭐⭐⭐☆</div>
+                    <p class="price">$30.50</p>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="harry_potter.jpg" alt="Harry Potter">
+                <div class="book-info">
+                    <h2>Harry Potter</h2>
+                    <p>by J.K. Rowling</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="price">$28.50</p>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="ballad_of_black.jpg" alt="Ballad Of Black">
+                <div class="book-info">
+                    <h2>Ballad Of Black</h2>
+                    <p>by Victor Lavalle</p>
+                    <div class="rating">⭐⭐⭐⭐☆</div>
+                    <p class="price">$23.00</p>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="a_million_to_one.jpg" alt="A Million...">
+                <div class="book-info">
+                    <h2>A Million...</h2>
+                    <p>by Tony Faggioli</p>
+                    <div class="rating">⭐⭐⭐☆☆</div>
+                    <p class="price">$53.00</p>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairy Tale App</title>
+    <link rel="manifest" href="/manifest.json"> <!-- Web Manifest -->
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .book-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .book-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .book-author {
+            font-size: 18px;
+        }
+        .buy-button {
+            background-color: pink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <img src="book-cover.jpg" alt="Fairy Tale Book Cover" class="book-image">
+        <div class="book-title">Fairy Tale</div>
+        <div class="book-author">by Stephen King</div>
+        <p>Description: A dark fantasy novel involving keys to a hidden otherworldly kingdom.</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+
+    <!-- Your JavaScript code goes here (if needed) -->
+    <script>
+        // Add any interactivity or functionality here
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </header>
+        <main>
+            <h1>Select A Payment Method</h1>
+            <div class="payment-methods">
+                <div class="payment-method" id="bkash">
+                    <img src="https://example.com/bkash.png" alt="bKash">
+                </div>
+                <div class="payment-method" id="nagad">
+                    <img src="https://example.com/nagad.png" alt="Nagad">
+                </div>
+                <div class="payment-method" id="paypal">
+                    <img src="https://example.com/paypal.png" alt="PayPal">
+                </div>
+                <div class="payment-method" id="mastercard">
+                    <img src="https://example.com/mastercard.png" alt="Mastercard">
+                </div>
+                <div class="payment-method" id="visa">
+                    <img src="https://example.com/visa.png" alt="Visa">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="icon" id="home"></div>
+            <div class="icon" id="cart"></div>
+            <div class="icon" id="settings"></div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <span class="time">11:30</span>
+                <div class="icons">
+                    <div class="grid-icon"></div>
+                    <div class="add-book">+ ADD BOOK</div>
+                    <div class="notification-icon"></div>
+                </div>
+            </div>
+            <h1>Setting</h1>
+        </header>
+        
+        <section class="account-section">
+            <div class="account-info">
+                <div class="icon account-icon"></div>
+                <div class="text">
+                    <span class="title">Rana</span>
+                    <span class="subtitle">Account Information</span>
+                </div>
+                <div class="arrow"></div>
+            </div>
+            <div class="password-security">
+                <div class="icon lock-icon"></div>
+                <div class="text">
+                    <span class="title">Password and Security</span>
+                    <span class="subtitle">Personal Password</span>
+                </div>
+                <div class="arrow"></div>
+            </div>
+        </section>
+        
+        <section class="setting-section">
+            <div class="setting-option">
+                <div class="icon help-icon"></div>
+                <span>Help</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="setting-option">
+                <div class="icon feedback-icon"></div>
+                <span>Send Feedback</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="setting-option">
+                <div class="icon language-icon"></div>
+                <span>Language</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="setting-option">
+                <div class="icon logout-icon"></div>
+                <span>Logout</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-icon home-icon"></div>
+            <div class="footer-icon bookmark-icon"></div>
+            <div class="footer-icon settings-icon"></div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+    <div class="add-book-container">
+        <h1>ADD BOOK</h1>
+        <div class="book-cover-upload">
+            <button>+</button>
+            <p>Add Cover Image</p>
+        </div>
+        <form id="add-book-form">
+            <label for="book-type">Choose book type:</label><br>
+            <input type="radio" id="paper" name="book-type" value="paper">
+            <label for="paper">Paper Book</label><br>
+            <input type="radio" id="ebook" name="book-type" value="ebook">
+            <label for="ebook">E-Book</label><br>
+            <!-- Add other input fields here -->
+            <input type="text" id="title" name="title" placeholder="Book Title*" required>
+            <input type="text" id="author" name="author" placeholder="Book Author*" required>
+            <input type="number" id="pages" name="pages" placeholder="Number of pages">
+            <!-- Collections (implement as a dropdown or suitable form control) -->
+            <input type="checkbox" id="current-reading" name="current-reading">
+            <label for="current-reading">Book I'm currently reading</label>
+            <!-- Add other form controls as needed -->
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
